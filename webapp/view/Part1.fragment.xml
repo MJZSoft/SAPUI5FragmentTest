@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core"
+	controllerName="com.mjzsoft.FragmentTest.controller.Part1">
+	<VBox>
+		<items>
+			<Text text="This part is from XML fragment"/>
+			<Button text="Call Function of Fragment" press=".Part1.onClick"/>
+			<Button text="Call Function of Parent Directly" press="onClick"/>
+		</items>
+	</VBox>
+</core:FragmentDefinition>
