@@ -3,8 +3,9 @@
 	<VBox>
 		<items>
 			<Text text="This part is from XML fragment"/>
-			<Button text="Call Function of Fragment" press=".Part1.onClick"/>
+			<Button text="Call Function of Fragment" press=".oPart1.onClick"/>
 			<Button text="Call Function of Parent Directly" press="onClick"/>
+			<Button text="Call Function of Parent Indirectly" press=".oPart1.onClickParent"/>
 		</items>
 	</VBox>
 </core:FragmentDefinition>

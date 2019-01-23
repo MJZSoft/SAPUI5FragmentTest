@@ -3,12 +3,16 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 	return Controller.extend("com.mjzsoft.FragmentTest.controller.Part1", {
-		parent: null,
 		onInit: function () {
 			console.log("onInit of fragment will not call.");
 		},
 		onAfterRendering: function () {
 			console.log("onAfterRendering of fragment will not call.");
+		},
+		onClickParent: function (oEvent) {
+			console.log("I will call a function from parent fragment controller");
+			this.oView.oController.onClick2();
+			// The key point for accessing the parent controller is `this.oView.oController`
 		},
 		onClick: function (oEvent) {
 			console.log("I am in fragment controller");

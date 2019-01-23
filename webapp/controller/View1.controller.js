@@ -5,12 +5,15 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("com.mjzsoft.FragmentTest.controller.View1", {
-		Part1: new Part1(this), // this pointer is window here and not the Controller  
+		oPart1: new Part1(), // this pointer is window here and not the Controller  
 		onInit: function () {
 			
 		},
 		onClick: function (oEvent) {
 			console.log("I am in View1 Controller.");
+		},
+		onClick2: function (oEvent) {
+			console.log("I am in View1 Controller but called from fragment controller.");
 		}
 	});
 });
